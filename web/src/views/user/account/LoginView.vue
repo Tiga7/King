@@ -67,15 +67,15 @@ export default defineComponent({
     const login = () => {
       if (check_username() == true && check_password() == true) {
         console.log(formState)
+        api.login({
+        })
+          .then((resp) => {
+            console.log(resp)
+          })
+          .catch((error) => {
+            console.log(error)
+          })
       }
-      api.login({
-      })
-        .then((resp) => {
-          console.log(resp)
-        })
-        .catch((error) => {
-          console.log(error)
-        })
 
     }
     return {
