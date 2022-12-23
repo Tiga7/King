@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style scoped>
-div.playground {
+.playground {
   height: 70vh;
   width: 70vw;
   background-color: aliceblue;
